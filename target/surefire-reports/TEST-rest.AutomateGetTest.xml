@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="rest.AutomateGetTest" time="11.156" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Pragmatic\Software_testing\RestAssuredUdemy\target\test-classes;D:\Pragmatic\Software_testing\RestAssuredUdemy\target\classes;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\HP\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\HP\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\HP\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\HP\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\HP\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\HP\AppData\Local\Temp\surefire4167066405451625160\surefirebooter8903853891929190330.jar C:\Users\HP\AppData\Local\Temp\surefire4167066405451625160 2021-08-15T01-13-21_903-jvmRun1 surefire7715477157629249161tmp surefire_023829914636023847tmp"/>
+    <property name="surefire.test.class.path" value="D:\Pragmatic\Software_testing\RestAssuredUdemy\target\test-classes;D:\Pragmatic\Software_testing\RestAssuredUdemy\target\classes;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\HP\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\HP\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\HP\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\HP\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\HP\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\HP\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\HP\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\HP\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\HP\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\HP\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\HP\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\HP\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\HP\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\HP\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.0-M1\junit-jupiter-api-5.8.0-M1.jar;C:\Users\HP\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\HP\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\HP\.m2\repository\org\junit\platform\junit-platform-commons\1.8.0-M1\junit-platform-commons-1.8.0-M1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\HP"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_251\jre"/>
+    <property name="basedir" value="D:\Pragmatic\Software_testing\RestAssuredUdemy"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\HP\AppData\Local\Temp\surefire4167066405451625160\surefirebooter8903853891929190330.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_251\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_251\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="HP"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\HP\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\HP\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="D:\Pragmatic\Software_testing\RestAssuredUdemy"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_251\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_251\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Program Files\Pict;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_251\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="restSpecificationsUsage" classname="rest.AutomateGetTest" time="2.361">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Aug 2021 22:13:25 GMT
+ETag: W/"117-N/bAAYkc7htaIAny3w/rDId8NfU"
+Server: nginx
+Vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 58
+X-RateLimit-Reset: 1628979244
+x-srv-span: v=1;s=4f26480a51d6b3db
+x-srv-trace: v=1;t=89ac6881af6b3d86
+Content-Length: 180
+Connection: keep-alive
+
+{
+    "workspaces": [
+        {
+            "id": "ab4c35c8-6890-4591-b547-de7fcd09edfd",
+            "name": "MyNewWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "c494bed1-391c-4f96-8ddd-108cde3acf46",
+            "name": "MyLastWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "e08a0c50-dfbd-4bae-80be-d6cfc6a9fcfe",
+            "name": "My Workspace",
+            "type": "personal"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="extractResponse" classname="rest.AutomateGetTest" time="0.797">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Aug 2021 22:13:26 GMT
+ETag: W/"117-N/bAAYkc7htaIAny3w/rDId8NfU"
+Server: nginx
+Vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 57
+X-RateLimit-Reset: 1628979244
+x-srv-span: v=1;s=4f19626dd1a067c2
+x-srv-trace: v=1;t=db98f84275252031
+Content-Length: 180
+Connection: keep-alive
+
+{
+    "workspaces": [
+        {
+            "id": "ab4c35c8-6890-4591-b547-de7fcd09edfd",
+            "name": "MyNewWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "c494bed1-391c-4f96-8ddd-108cde3acf46",
+            "name": "MyLastWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "e08a0c50-dfbd-4bae-80be-d6cfc6a9fcfe",
+            "name": "My Workspace",
+            "type": "personal"
+        }
+    ]
+}
+Response is: Sat, 14 Aug 2021 22:13:26 GMT
+]]></system-out>
+  </testcase>
+  <testcase name="validateGetStatusCode" classname="rest.AutomateGetTest" time="0.806">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Aug 2021 22:13:27 GMT
+ETag: W/"117-N/bAAYkc7htaIAny3w/rDId8NfU"
+Server: nginx
+Vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 56
+X-RateLimit-Reset: 1628979244
+x-srv-span: v=1;s=6b7b3228550f802a
+x-srv-trace: v=1;t=351d1bdd1e50490b
+Content-Length: 180
+Connection: keep-alive
+
+{
+    "workspaces": [
+        {
+            "id": "ab4c35c8-6890-4591-b547-de7fcd09edfd",
+            "name": "MyNewWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "c494bed1-391c-4f96-8ddd-108cde3acf46",
+            "name": "MyLastWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "e08a0c50-dfbd-4bae-80be-d6cfc6a9fcfe",
+            "name": "My Workspace",
+            "type": "personal"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="mockServerHeadersTest" classname="rest.AutomateGetTest" time="0.903">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 14 Aug 2021 22:13:28 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-srv-trace: v=1;t=0afe652fd7f6bb7d
+x-srv-span: v=1;s=fb48fdb09e8316e6
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 120
+X-RateLimit-Remaining: 119
+X-RateLimit-Reset: 1628979268
+headerResponse: resValue2
+ETag: W/"1d-Ddwrw48ax0ZWYGj8bwONK3UIwr4"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+
+{
+    "msg": "HeaderValue2"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="assertResponseHeaders" classname="rest.AutomateGetTest" time="3.414">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 14 Aug 2021 22:13:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-srv-trace: v=1;t=415e9883cbc3625a
+x-srv-span: v=1;s=8771c344fb0bd68b
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 120
+X-RateLimit-Remaining: 118
+X-RateLimit-Reset: 1628979268
+headerResponse: resValue2
+ETag: W/"1d-Ddwrw48ax0ZWYGj8bwONK3UIwr4"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+
+{
+    "msg": "HeaderValue2"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="validateResponseBodyHamcrest" classname="rest.AutomateGetTest" time="0.804">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Aug 2021 22:13:32 GMT
+ETag: W/"117-N/bAAYkc7htaIAny3w/rDId8NfU"
+Server: nginx
+Vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 55
+X-RateLimit-Reset: 1628979244
+x-srv-span: v=1;s=c5ae0ed357d1cc04
+x-srv-trace: v=1;t=637f8c42cf370310
+Content-Length: 180
+Connection: keep-alive
+
+{
+    "workspaces": [
+        {
+            "id": "ab4c35c8-6890-4591-b547-de7fcd09edfd",
+            "name": "MyNewWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "c494bed1-391c-4f96-8ddd-108cde3acf46",
+            "name": "MyLastWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "e08a0c50-dfbd-4bae-80be-d6cfc6a9fcfe",
+            "name": "My Workspace",
+            "type": "personal"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="hamcrestAssertOfExtractedResponse" classname="rest.AutomateGetTest" time="0.819">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Sat, 14 Aug 2021 22:13:33 GMT
+ETag: W/"117-N/bAAYkc7htaIAny3w/rDId8NfU"
+Server: nginx
+Vary: Accept-Encoding
+x-frame-options: SAMEORIGIN
+X-RateLimit-Limit: 60
+X-RateLimit-Remaining: 54
+X-RateLimit-Reset: 1628979244
+x-srv-span: v=1;s=54559327caac1868
+x-srv-trace: v=1;t=43fe3964ad36868a
+Content-Length: 180
+Connection: keep-alive
+
+{
+    "workspaces": [
+        {
+            "id": "ab4c35c8-6890-4591-b547-de7fcd09edfd",
+            "name": "MyNewWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "c494bed1-391c-4f96-8ddd-108cde3acf46",
+            "name": "MyLastWorkspace",
+            "type": "personal"
+        },
+        {
+            "id": "e08a0c50-dfbd-4bae-80be-d6cfc6a9fcfe",
+            "name": "My Workspace",
+            "type": "personal"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="printExtractedHeaders" classname="rest.AutomateGetTest" time="0.833">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Sat, 14 Aug 2021 22:13:34 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-srv-trace: v=1;t=b81ed27e2ce0e1de
+x-srv-span: v=1;s=6866518027fed2a5
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 120
+X-RateLimit-Remaining: 117
+X-RateLimit-Reset: 1628979268
+headerResponse: resValue2
+ETag: W/"1d-Ddwrw48ax0ZWYGj8bwONK3UIwr4"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+
+{
+    "msg": "HeaderValue2"
+}
+Date --- Sat, 14 Aug 2021 22:13:34 GMT
+Content-Type --- application/json; charset=utf-8
+Transfer-Encoding --- chunked
+Connection --- keep-alive
+Server --- nginx
+x-srv-trace --- v=1;t=b81ed27e2ce0e1de
+x-srv-span --- v=1;s=6866518027fed2a5
+Access-Control-Allow-Origin --- *
+X-RateLimit-Limit --- 120
+X-RateLimit-Remaining --- 117
+X-RateLimit-Reset --- 1628979268
+headerResponse --- resValue2
+ETag --- W/"1d-Ddwrw48ax0ZWYGj8bwONK3UIwr4"
+Vary --- Accept-Encoding
+Content-Encoding --- gzip
+]]></system-out>
+  </testcase>
+</testsuite>
