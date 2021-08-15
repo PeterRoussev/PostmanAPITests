@@ -20,7 +20,7 @@ public class AutomateGetTest {
     static void beforeAll(){
         requestSpecification = given().
                 baseUri("https://api.postman.com").
-                header("X-Api-Key", "PMAK-6116408d35ec5e005c7d3046-2aeb1203aac985ced9f97e35fe6da34c9d");
+                header("X-Api-Key", "{{apiKey}}");
     }
 
     @Test
